@@ -17,6 +17,14 @@ p {
     box-shadow: 0 0 30px #777;
 }
 
+/* added this, this is a comment */
+.shifted-text {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: yellow;
+}
+
 footer {
     border-top: 1px solid #555;
     padding-top: 5px;
