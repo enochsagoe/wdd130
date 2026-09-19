@@ -50,6 +50,8 @@ article {
 
 .socialmedia a {
     text-decoration: none;
+    width: 30;
+    height: 30;
 }
 
 .hero {
