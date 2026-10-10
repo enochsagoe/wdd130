@@ -282,3 +282,218 @@ article {
     border-radius: 50%;
     margin: 0 auto 4px;
 }
+
+/* ===== W06 additions: paste at the very END of styles/rafting.css ===== */
+
+/* Current page in the nav */
+nav ul li a[aria-current="page"] {
+    background-color: var(--accent2-color);
+}
+
+/* Buttons (links and form buttons) */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 0;
+    font: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+/* ---------- Home: hero ---------- */
+.home-hero img {
+    height: 420px;
+    object-fit: cover;
+}
+
+.home-hero h1 {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+}
+
+/* ---------- Home: call to action + newsletter (CSS Grid) ---------- */
+.action-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.cta {
+    background-color: var(--accent2-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.newsletter {
+    border: 2px solid var(--secondary-color);
+}
+
+.field {
+    margin-bottom: 12px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--accent1-color);
+    background-color: #fff;
+    color: #000;
+    font: inherit;
+}
+
+/* ---------- Home: image + content grid (CSS Grid) ---------- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.about-grid h2 {
+    grid-column: 1 / -1;
+}
+
+.about-grid img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.about-grid article {
+    margin: 0;
+}
+
+.about-grid h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* ---------- Trips ---------- */
+.page-title {
+    position: static;
+    width: auto;
+    margin: 16px;
+    opacity: 1;
+}
+
+.trip {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 16px;
+    align-items: center;
+    border: 2px solid var(--secondary-color);
+}
+
+.trip img {
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.trip-details {
+    margin-top: 8px;
+    list-style: none;
+}
+
+.trip-details li {
+    padding: 2px 0;
+}
+
+.trips-cta {
+    text-align: center;
+}
+
+/* ---------- Trips: summary table (add after the Trips block) ---------- */
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    padding-bottom: 8px;
+    text-align: left;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid var(--accent1-color);
+    text-align: left;
+}
+
+thead th {
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fdf6e3;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 700px) {
+
+    .action-row,
+    .about-grid,
+    .trip {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- Trips: summary table ---------- */
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    padding-bottom: 8px;
+    text-align: left;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid var(--accent1-color);
+    text-align: left;
+}
+
+thead th {
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fdf6e3;
+}
